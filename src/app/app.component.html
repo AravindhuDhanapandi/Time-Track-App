@@ -1,0 +1,66 @@
+
+<mat-tab-group>
+    <mat-tab label="Track">
+       
+            <h1>Timer</h1>
+            <div id="clockdiv">
+              <div>
+                <span class="days"></span>
+                <div class="smalltext">Days</div>
+              </div>
+              <div>
+                <span class="hours"></span>
+                <div class="smalltext">Hours</div>
+              </div>
+              <div>
+                <span class="minutes"></span>
+                <div class="smalltext">Minutes</div>
+              </div>
+              <div>
+                <span class="seconds"></span>
+                <div class="smalltext">Seconds</div>
+              </div>
+            </div>
+            
+       
+    </mat-tab>
+    <mat-tab label="Book-Time">
+        <div>
+            <p>Description:</p>
+            <input type="text"/> 
+    
+        <p>Finishing Time:</p>
+        <input type="datetime"/> 
+        </div>
+            <button color="primary" mat-raised-button>Submit</button>
+    </mat-tab>
+    <mat-tab label="Overview">
+
+        </mat-tab> 
+      </mat-tab-group>
+      <!DOCTYPE html>
+<html>
+  <head>
+    <title>Angular2 Simple Timer Example</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 1. Load libraries -->
+     <!-- Polyfill(s) for older browsers -->
+    <script src="https://unpkg.com/core-js/client/shim.min.js"></script>
+
+    <script src="https://unpkg.com/zone.js@0.7.4?main=browser"></script>
+    <script src="https://unpkg.com/systemjs@0.19.40/dist/system.src.js"></script>
+
+    <!-- 2. Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
+  </head>
+
+  <!-- 3. Display the application -->
+  <body>
+    <my-app>Loading...</my-app>
+  </body>
+</html>
